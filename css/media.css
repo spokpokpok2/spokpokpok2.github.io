@@ -119,14 +119,17 @@ animation: none !important;
  height: 720px;   
 }
     .screenshots-item h1{
-        font-size: 40px;
+        font-size: 35px;
     }
+    
 
 } 
 
 /* Custom, iPhone Retina */ 
 @media only screen and (max-width : 320px) { 
-
+.screenshots-item h1{
+        font-size: 25px;
+    }
 
 } 
 

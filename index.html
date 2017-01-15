@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="css/media.css"> 
   <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
             
-	
+
 	
 </head>
 <body>
@@ -54,8 +54,8 @@
                 <h1>Get the most fun 
 weather app</h1>
                 <p>Simple, nice and user-friendly application of the weather. Only useful information</p>
-                <button id="btn_1"><p>Download</p></button>
-                <button id="btn_2"><p>Features</p></button>
+                <button id="btn_1" href="#download-phone"><a href="#download-phone">Download</a></button>
+                <button id="btn_2" href="#features"><a href="#features">Features</a></button>
             </div>
             <div class="col-sm-6 col-xs-12"><img class="header-right-side-img img-responsive" src="img/phone.png" alt=""></div>
         </div>
@@ -66,7 +66,7 @@ weather app</h1>
     <div class="container">
         <div class="row">
            <div class="necessary-block col-xs-12">
-            <h2>Perfect Features</h2>
+            <h2 id="features">Perfect Features</h2>
             <h5>Only necessary</h5>
             <div class="col-md-4 necessary-item">
                 <div class="col-xs-3"><img src="img/main-icon-1.png" alt="" class=" img-responsive"></div>
@@ -110,11 +110,11 @@ weather app</h1>
             <div class="screenshots-item col-md-12 col-md-offset-0 col-xs-12 col-xs-offset-0">
             <div class="col-sm-6 col-xs-6"><img class="img-responsive" src="img/screen-phone-1.png" alt=""></div>
             <div class="col-sm-6 col-xs-6">
-               <img src="img/screen-icon-1.png" alt="" class="weather-icon">
+               <img src="img/screen-icon-1.png" alt="" class="weather-icon img-responsive">
                 <h1>Get the most fun 
 weather app</h1>
                 <p>Simple, nice and user-friendly application of the weather. Only useful information</p>
-                <img src="img/weather-icons-1.png" alt="">
+                <img src="img/weather-icons-1.png" alt=""  class="img-responsive">
             </div>
             
             
@@ -123,11 +123,11 @@ weather app</h1>
          <div class="screenshots-item col-md-12 col-md-offset-0 col-xs-12 col-xs-offset-0">
             
             <div class="col-sm-6 col-xs-6">
-               <img src="img/screen-icon-2.png" alt="" class="weather-icon">
+               <img src="img/screen-icon-2.png" alt="" class="weather-icon img-responsive">
                 <h1>Get the most fun 
 weather app</h1>
                 <p>Simple, nice and user-friendly application of the weather. Only useful information</p>
-                <img src="img/weather-icons-1.png" alt="">
+                <img src="img/weather-icons-1.png" alt="" class="img-responsive">
             </div>
             <div class="col-sm-6 col-xs-6"><img class=" img-responsive" src="img/screen-phone-2.png" alt=""></div>
             
@@ -135,11 +135,11 @@ weather app</h1>
         <div class="screenshots-item col-md-12 col-md-offset-0 col-xs-12 col-xs-offset-0">
             <div class="col-sm-6 col-xs-6"><img class="img-responsive" src="img/screen-phone-3.png" alt=""></div>
             <div class="col-sm-6 col-xs-6">
-               <img src="img/screen-icon-3.png" alt="" class="weather-icon">
+               <img src="img/screen-icon-3.png" alt="" class="weather-icon img-responsive">
                 <h1>Get the most fun 
 weather app</h1>
                 <p>Simple, nice and user-friendly application of the weather. Only useful information</p>
-                <img src="img/weather-icons-1.png" alt="">
+                <img src="img/weather-icons-1.png" alt="" class="img-responsive">
             </div>
             
             
@@ -254,5 +254,23 @@ Simple, nice and user-friendly application of theweather. Only relevant and usef
 <script src="libs/jquery/jquery-2.1.4.min.js"></script>
 <script src="libs/bootstrap/js/bootstrap.min.js"></script>
 <script src="js/common.js"></script>
+	<script>
+     
+$(document).ready(function(){
+	$("div.main-header").on("click","button", function (event) {
+		//отменяем стандартную обработку нажатия по ссылке
+		event.preventDefault();
+
+		//забираем идентификатор бока с атрибута href
+		var id  = $(this).attr('href'),
+
+		//узнаем высоту от начала страницы до блока на который ссылается якорь
+			top = $(id).offset().top;
+		
+		//анимируем переход на расстояние - top за 1500 мс
+		$('body,html').animate({scrollTop: top}, 1500);
+	});
+});
+</script>
 </body>
 </html>

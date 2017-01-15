@@ -65,12 +65,14 @@ header{
     border:none;
     border-radius: 6px;
 }
-.main-header button p{
+.main-header button a{
     padding: 0;
     margin: 0;
     font-size:18px;
     color:#fff;
     margin-top: -3px;
+    display: block;
+    text-decoration: none;
 }
 .main-header #btn_1{
     background: #fc6a42;
