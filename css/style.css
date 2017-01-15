@@ -46,7 +46,8 @@ p{
 }
 header{
    
-    background: #648cff url(../img/wave.png) no-repeat 100% 107%;
+    background: #648cff url(../img/wave.png) no-repeat 0px 350px;
+    background-size: cover;
 }
 .main-header h1{
     color:#fff;
