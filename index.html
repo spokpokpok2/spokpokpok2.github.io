@@ -1,173 +1,258 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="/font-awesome-4.6.3/css/font-awesome.min.css">
-    <link rel="stylesheet" href="animate%20.css">
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script type="text/javascript" src="wow.min.js"></script>
+  <meta charset="UTF-8">
+  <title>Landing page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css"> 
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+            
+	
+	
 </head>
 <body>
- <header>
-     
-      <div class="hedder-background">
-      <div class="header-inside">
-          <h1><a href="index.html"><img src="img/logo.png" alt="logo"></a></h1>
-          <nav>
-              <ul>
-                  <li><a href="#">главная</a></li>
-                  <li><a href="#">приемущества</a></li>
-                  <li><a href="#">отзывы</a></li>
-                  <li><a href="#">контакты</a></li>
-               
-              </ul>
-          </nav>
-          
-      </div>
-  </div> 
-     
-     
- </header>
-    <div class="main-bg">
- <div class="wrapper">
-  
-        <div class="main-info wow flipInY">
-        <h1>Cleaner</h1>
-        <p>Обратите внимание на то, что стандартным поиском файлов программа Cleaner не ограничилась и начала интегрироваться в различные популярные программы. К примеру, программа Cleaner отлично работает с Internet Explorer и Edge, может подчищать здесь куки, историю посещений, загрузок и временные файлы. Программа Cleaner помогает лучше чистить корзину, буфер обмена, логи Windows, удалять историю помощника, фрагменты файлов ChkDsk и многое другое.</p>
-        <p>У программы Cleaner есть и продвинутые возможности, которые позволяют чистить кеш сообщений трея, а также кеш размеров и локаций Windows. Тут же стоит отметить, что можно удалять историю помощи пользователю, а также файлы логов IIS и дополнительные папки. </p>
-        
-        <label for="download">
-        <input type="submit" id="download" value="СКАЧАТЬ"></label>
-             </div>
-     <div class="img-block wow flipInX"> </div>
-        
- 
-     
-     
- 
-</div>
-   </div>        
-             <div class="advantages">
-            <h2>ПРЕИМУЩЕСТВА</h2>
-                
-                  <ul>
-                      <li  >
-                          <img src="img/round-img1.jpg" alt="img" class="wow zoomIn" data-wow-offset="35">
-                          <h3 class="wow slideInUp">ФУКЦИОНАЛ</h3>
-                          <p class="wow slideInDown">Очистка файлов, очистка реестра, удаление программ, настройка автозагрузки, поиск удаленных файлов</p>
-                      </li>
-                      <li>
-                          <img src="img/round-img.jpg" alt="img" class="wow zoomIn" data-wow-offset="35">
-                          <h3 class="wow slideInUp">ОТЗЫВЧИВЫЙ ИНТЕРФЕЙС</h3>
-                          <p class="wow slideInDown">Обновленный минималистичный дизайн доступен для пониманя пользователям любого уровня, ускоряя систему всего за пару кликов</p>
-                      </li>
-                      <li>
-                          <img src="img/round-img3.jpg" alt="img" class="wow zoomIn" data-wow-offset="35">
-                          <h3 class="wow slideInUp">БЕЗОПАСНОСТЬ</h3>
-                          <p class="wow slideInDown">Для продвинутых пользователей существует функция безвозвратного удаления файлов (35 проходов)</p>
-                      </li>
-                  </ul>
-                  <ul>
-                      <li>
-                          <img src="img/round-img4.jpg" alt="img" class="wow zoomIn" data-wow-offset="35">
-                          <h3 class="wow slideInUp">УНИВЕРСАЛЬНОСТЬ</h3>
-                          <p class="wow slideInDown">Поддержка всех систем Windows XP, Vista, 7, 8, 8.1, 10</p>
-                      </li>
-                      <li>
-                          <img src="img/round-img5.jpg" alt="img" class="wow zoomIn" data-wow-offset="35">
-                          <h3 class="wow slideInUp">АВТООБНОВЛЕНИЕ</h3>
-                          <p class="wow slideInDown">После публикации Вы сразу же бесплатно обновитесь на свежую версию программы.</p>
-                      </li>
-                      <li>
-                          <img src="img/round-img6.jpg" alt="img" class="wow zoomIn" data-wow-offset="35">
-                          <h3 class="wow slideInUp">ГИБКИЕ НАСТРОЙКИ</h3>
-                          <p class="wow slideInDown">Для продвинутых пользователей существуют всевозможные настройки, исключения, планировщик и другие возможности</p>
-                      </li>
-                  </ul>
+<header>
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span>
+ <span class="icon-bar"></span>
+ <span class="icon-bar"></span>
+ <span class="icon-bar"></span>
+</button>
+        <a class="navbar-brand" id="logo" href="#">FUN WEATHER.</a>
+
         </div>
- 
-  <div class="reviews">
-      <h2>отзывы</h2>
-      <div class="coment">
-          <div class="client wow bounceIn"  data-wow-offset="100"><img src="img/client-pic1.jpg" alt="">
-          <div class="quote"><p><i class="fa fa-quote-left" aria-hidden="true"></i>После запуска программы заметно ускоряется загрузка системы. В среднем на 15-20%. Такого можно достичь лишь переустановкой системы.<i class="fa fa-quote-right" aria-hidden="true"></p></i></div>
-          <h4>АРТЕМ НЕВСКИХ</h4>
-              <span><p>ФинСтрой</p></span>
-          </div>
-          
-          
-          
-          <div class="client2 wow bounceIn" data-wow-offset="100"><div class="quote2"><p><i class="fa fa-quote-left" aria-hidden="true"></i>Бесплатное, но такое многофункциональное приложение. Пользуюсь более 3-х лет. Компьютер работает как часы.<i class="fa fa-quote-right" aria-hidden="true"></p></i></div><img src="img/client-pic1.jpg" alt="">
-          <h4>МАРИЯ НЕСТЕРОВА</h4>
-              <span><p>BFA Company</p></span>
-          </div>
-          
-      
-    </div></div>
-<div class="social-bg">
-    <div class="social">
-        <ul>
-            <li><a href=""><img src="img/enva.png" alt=""  class="wow bounce" data-wow-delay="0.3s"></a></li>
-            <li><a href=""><img src="img/wordp.png" alt="" class="wow bounce" data-wow-delay="0.3s"></a></li>
-            <li><a href=""><img src="img/beh.png" alt="" class="wow bounce" data-wow-delay="0.3s"></a></li>
-            <li><a href=""><img src="img/twi.png" alt="" class="wow bounce" data-wow-delay="0.3s"></a></li>
-        </ul>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav" id="navigation">
+                <li><a href="#">Home</a>
+                </li>
+                <li><a href="#">Features</a>
+                </li>
+                <li><a href="#">Reviews</a>
+                </li>
+                <li><a href="#">Download</a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right" id="navigation-social">
+                <li><a href="#"><img src="img/facebook.png" alt=""></a>
+                </li>
+                <li><a href="#"><img src="img/instagram.png" alt=""></a>
+                </li>
+                <li><a href="#"><img src="img/twitter.png" alt=""></a>
+                </li>
+            </ul>
+        </div>
     </div>
-</div>
-<div class="contact-bg">
- <div class="contact">
-     <h2>контакты</h2>
-     <ul>
-                      <li>
-                          <img src="img/round-img7.jpg" alt="img" class="wow rollIn" data-wow-offset="100" data-wow-delay="0.2s">
-                          
-                          <p>192007, Санкт-Петербург<br>
-Лиговский пр., 153, БЦ "Лигов"</p>
-                      </li>
-                      <li>
-                          <img src="img/round-img8.jpg" alt="img" class="wow rollIn" data-wow-offset="100" data-wow-delay="0.2s">
-                          
-                          <p>602-15-00</p>
-                      </li>
-                      <li>
-                          <img src="img/round-img9.jpg" alt="img" class="wow rollIn" data-wow-offset="100" data-wow-delay="0.2s">
-                          
-                          <p>info@lumia.com</p>
-                      </li>
-                  </ul>
-        
-         <div class="left-side">
-          <h3 class="wow slideInLeft" data-wow-offset="50">НАПИШИТЕ НАМ</h3>
-          <p class="wow slideInLeft" data-wow-offset="50">Любые вопросы по работе с программой вы можете направить нам через форму справа</p>
-          <ul>
-              <li><a href=""><img src="img/social-logo1.jpg" alt="" class="wow bounceIn" data-wow-delay="0.1s"  data-wow-offset="30"></a></li>
-              <li><a href=""><img src="img/social-logo2.jpg" alt="" class="wow bounceIn" data-wow-delay="0.3s"  data-wow-offset="30"></a></li>
-              <li><a href=""><img src="img/social-logo3.jpg" alt="" class="wow bounceIn" data-wow-delay="0.5s"  data-wow-offset="30"></a></li>
-              <li><a href=""><img src="img/social-logo4.jpg" alt="" class="wow bounceIn" data-wow-delay="0.6s"  data-wow-offset="30"></a></li>
-              <li><a href=""><img src="img/social-logo5.jpg" alt="" class="wow bounceIn" data-wow-delay="0.7s"  data-wow-offset="30"></a></li>
-          </ul>
-      </div>          
-                 <div class="right-side">
-                    <form >
-                        <p><input type="text" placeholder="Ваше имя" class="wow flipInY" data-wow-delsy="0.2s" data-wow-offset="100"></p>
-                     <p><input type="email" placeholder="Ваш e-mail" class="wow flipInY" data-wow-delsy="0.4s" data-wow-offset="100"></p>
-                     <p><textarea name="text-block" id="" cols="30" rows="12" placeholder="Ваше сообщения" class="wow flipInY" data-wow-delsy="0.6s" data-wow-offset="100"></textarea></p>
-                     <input type="submit" value="ОТПРАВИТЬ" class="wow flipInY" data-wow-delsy="0.7s" data-wow-offset="-140">
-                     </form>
-                 </div> 
-     
- </div>
-  </div>
-  <div class="footer-bg">
-  <footer>
-      <p>©2016 <a href="http://cleaner-setup.ru">cleaner-setup.ru</a>.</p>
-      
-  </footer>
-  </div>
-  <script>
-new WOW().init();
-</script>
+</nav>
+<div class="main-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-xs-12 left-side">
+                <h1>Get the most fun 
+weather app</h1>
+                <p>Simple, nice and user-friendly application of the weather. Only useful information</p>
+                <button id="btn_1"><p>Download</p></button>
+                <button id="btn_2"><p>Features</p></button>
+            </div>
+            <div class="col-sm-6 col-xs-12"><img class="header-right-side-img img-responsive" src="img/phone.png" alt=""></div>
+        </div>
+    </div>
+</div>   
+</header>
+<main>
+    <div class="container">
+        <div class="row">
+           <div class="necessary-block col-xs-12">
+            <h2>Perfect Features</h2>
+            <h5>Only necessary</h5>
+            <div class="col-md-4 necessary-item">
+                <div class="col-xs-3"><img src="img/main-icon-1.png" alt="" class=" img-responsive"></div>
+                <div class="col-xs-9">
+                    <h3>Usability</h3>
+                    <p>Sometimes the simplest things are the hardest to find. So we created a new line for everyday life</p>
+                </div>
+            </div>
+            <div class="col-md-4 necessary-item">
+                <div class="col-xs-3"><img src="img/main-icon-2.png" alt="" class=" img-responsive"></div>
+                <div class="col-xs-9">
+                    <h3>Parallax Effect</h3>
+                    <p>Sometimes the simplest things are the hardest to find. So we created a new line for everyday life</p>
+                </div>
+            </div>
+            <div class="col-md-4 necessary-item">
+                <div class="col-xs-3"><img src="img/main-icon-3.png" alt="" class=" img-responsive"></div>
+                <div class="col-xs-9">
+                    <h3>Usability</h3>
+                    <p>Sometimes the simplest things are the hardest to find. So we created a new line for everyday life</p>
+                </div>
+            </div>
+            </div>
+            </div>
+            </div>
+            <div class="container">
+            <div class="row">
+            <div class="slider-block col-sm-6 col-sm-offset-3">
+            <h2>Simple widgets</h2>
+            <h5>Drag and drop</h5>
+            <img src="img/giphy.gif" class="img-responsive" alt="">
+            </div>
+            </div>
+            </div>
+            
+            <div class="container">
+            <div class="row">
+            <div class="screenshots-block col-md-12 col-xs-12">
+               <h2>Screenshots</h2>
+            <h5>Drag and drop</h5>
+            <div class="screenshots-item col-md-12 col-md-offset-0 col-xs-12 col-xs-offset-0">
+            <div class="col-sm-6 col-xs-6"><img class="img-responsive" src="img/screen-phone-1.png" alt=""></div>
+            <div class="col-sm-6 col-xs-6">
+               <img src="img/screen-icon-1.png" alt="" class="weather-icon">
+                <h1>Get the most fun 
+weather app</h1>
+                <p>Simple, nice and user-friendly application of the weather. Only useful information</p>
+                <img src="img/weather-icons-1.png" alt="">
+            </div>
+            
+            
+        </div>
+         
+         <div class="screenshots-item col-md-12 col-md-offset-0 col-xs-12 col-xs-offset-0">
+            
+            <div class="col-sm-6 col-xs-6">
+               <img src="img/screen-icon-2.png" alt="" class="weather-icon">
+                <h1>Get the most fun 
+weather app</h1>
+                <p>Simple, nice and user-friendly application of the weather. Only useful information</p>
+                <img src="img/weather-icons-1.png" alt="">
+            </div>
+            <div class="col-sm-6 col-xs-6"><img class=" img-responsive" src="img/screen-phone-2.png" alt=""></div>
+            
+        </div>
+        <div class="screenshots-item col-md-12 col-md-offset-0 col-xs-12 col-xs-offset-0">
+            <div class="col-sm-6 col-xs-6"><img class="img-responsive" src="img/screen-phone-3.png" alt=""></div>
+            <div class="col-sm-6 col-xs-6">
+               <img src="img/screen-icon-3.png" alt="" class="weather-icon">
+                <h1>Get the most fun 
+weather app</h1>
+                <p>Simple, nice and user-friendly application of the weather. Only useful information</p>
+                <img src="img/weather-icons-1.png" alt="">
+            </div>
+            
+            
+        </div>
+    </div>
+           </div>
+            </div>
+           <div class="container">
+            <div class="row">
+            <div class="reviews-block col-md-12 col-md-offset-0 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+               <h2>What people are saying</h2>
+            <h5>Reviews</h5>
+                <div class="reviews-item col-md-6 col-xs-12">
+                    <img src="img/review-icon-up.png" class="review-icon-up" alt="">
+                    <p>We do not see nature with our eyes, but with our understandings and our hearts.</p>
+                    <h6>William Hazlitt</h6>
+                    <img src="img/review-icon-down.png" class="review-icon-down pull-right" alt="">
+                </div>
+                <div class="reviews-item col-md-6 col-xs-12">
+                    <img src="img/review-icon-up.png" class="review-icon-up" alt="">
+                    <p>We do not see nature with our eyes, but with our understandings and our hearts.</p>
+                    <h6>William Hazlitt</h6>
+                    <img src="img/review-icon-down.png" class="review-icon-down pull-right" alt="">
+                </div>
+                <div class="reviews-item col-md-6 col-xs-12">
+                    <img src="img/review-icon-up.png" class="review-icon-up" alt="">
+                    <p>We do not see nature with our eyes, but with our understandings and our hearts.</p>
+                    <h6>William Hazlitt</h6>
+                    <img src="img/review-icon-down.png" class="review-icon-down pull-right" alt="">
+                </div>
+                <div class="reviews-item col-md-6 col-xs-12">
+                    <img src="img/review-icon-up.png" class="review-icon-up" alt="">
+                    <p>We do not see nature with our eyes, but with our understandings and our hearts.</p>
+                    <h6>William Hazlitt</h6>
+                    <img src="img/review-icon-down.png" class="review-icon-down pull-right" alt="">
+                </div>
+                
+            </div>
+            </div>
+            </div>
+    
+
+            
+            <div class="container-fluid" id="download-phone">
+                <div class="row">
+                    <div class="download-block col-md-12">
+                    <div class="container">
+                        <div class="row">
+                            
+                 <div class="col-md-6 download-item">
+                     <h2>How Download the app?</h2>
+                     <p>Just download the app from the store.
+Simple, nice and user-friendly application of theweather. Only relevant and useful information.</p>
+                    <div class="button-block">
+                     <button class="social-btn-1"></button>
+                     <button class="social-btn-2"></button>
+                     </div>
+                 </div>
+                        </div>
+                    </div>
+                
+            </div>
+              </div>
+            </div> 
+    
+    
+    
+</main>
+<footer>
+    <div class="container">
+        <div class="row">
+           <div class="com-md-12 footer-top">
+              <div class="col-sm-3">
+               <h1 ><span>FUN</span> WEATHER.</h1>
+               </div>
+               <div class="col-sm-6">
+               <ul class="footer-menu text-center">
+                   <li><a href="#">Home</a>
+                </li>
+                <li><a href="#">Features</a>
+                </li>
+                <li><a href="#">Reviews</a>
+                </li>
+                <li><a href="#">Download</a>
+                </li>
+               </ul>
+               </div>
+               <div class="col-sm-3 text-center">
+               <ul class="footer-social">
+                   <li><a href="#"><img src="img/facebook.png" alt=""></a>
+                </li>
+                <li><a href="#"><img src="img/instagram.png" alt=""></a>
+                </li>
+                <li><a href="#"><img src="img/twitter.png" alt=""></a>
+                </li>
+               </ul>
+               </div>
+           </div>
+           <div class="col-md-12 border-bottomborder-bottom"></div>
+           <div class="col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2 col-md-5 col-md-offset-7 footer-bottom">
+               <p>© 2016 All rights reserved. Weather App Theme by Gravpix</p>
+           </div>
+             <a href="#logo" class="up-page"></a>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<script src="https://use.fontawesome.com/e7946ee7ba.js"></script>
+<script src="libs/jquery/jquery-2.1.4.min.js"></script>
+<script src="libs/bootstrap/js/bootstrap.min.js"></script>
+<script src="js/common.js"></script>
 </body>
 </html>
