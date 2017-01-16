@@ -27,13 +27,13 @@
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav" id="navigation">
-                <li><a href="#">Home</a>
+                <li><a href="#logo">Home</a>
                 </li>
-                <li><a href="#">Features</a>
+                <li><a href="#features">Features</a>
                 </li>
-                <li><a href="#">Reviews</a>
+                <li><a href="#reviews">Reviews</a>
                 </li>
-                <li><a href="#">Download</a>
+                <li><a href="#download-phone">Download</a>
                 </li>
             </ul>
             <ul class="nav navbar-nav navbar-right" id="navigation-social">
@@ -54,12 +54,13 @@
                 <h1>Get the most fun 
 weather app</h1>
                 <p>Simple, nice and user-friendly application of the weather. Only useful information</p>
-                <button id="btn_1" href="#download-phone"><p>Download</p></button>
-                <button id="btn_2" href="#features"><p>Features</p></button>
+                <button id="btn_1" href="#download-phone"><a href="#download-phone">Download</a></button>
+                <button id="btn_2" href="#features"><a href="#features">Features</a></button>
             </div>
             <div class="col-sm-6 col-xs-12"><img class="header-right-side-img img-responsive" src="img/phone.png" alt=""></div>
         </div>
     </div>
+    <div class="scroll-down"></div>
 </div>   
 </header>
 <main>
@@ -147,7 +148,7 @@ weather app</h1>
     </div>
            </div>
             </div>
-           <div class="container">
+           <div class="container" id="reviews">
             <div class="row">
             <div class="reviews-block col-md-12 col-md-offset-0 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
                <h2>What people are saying</h2>
@@ -213,17 +214,17 @@ Simple, nice and user-friendly application of theweather. Only relevant and usef
         <div class="row">
            <div class="com-md-12 footer-top">
               <div class="col-sm-3">
-               <h1 ><span>FUN</span> WEATHER.</h1>
+               <h1 ><a href="#logo"><span>FUN</span> WEATHER.</a></h1>
                </div>
                <div class="col-sm-6">
                <ul class="footer-menu text-center">
-                   <li><a href="#">Home</a>
+                   <li><a href="#logo">Home</a>
                 </li>
-                <li><a href="#">Features</a>
+                <li><a href="#features">Features</a>
                 </li>
-                <li><a href="#">Reviews</a>
+                <li><a href="#reviews">Reviews</a>
                 </li>
-                <li><a href="#">Download</a>
+                <li><a href="#download-phone">Download</a>
                 </li>
                </ul>
                </div>
@@ -257,7 +258,7 @@ Simple, nice and user-friendly application of theweather. Only relevant and usef
 	<script>
      
 $(document).ready(function(){
-	$("div.main-header").on("click","button", function (event) {
+	$("body").on("click","a", function (event) {
 		//отменяем стандартную обработку нажатия по ссылке
 		event.preventDefault();
 
@@ -268,24 +269,10 @@ $(document).ready(function(){
 			top = $(id).offset().top;
 		
 		//анимируем переход на расстояние - top за 1500 мс
-		$('body,html').animate({scrollTop: top}, 1500);
+		$('body,html').animate({scrollTop: top}, 1000);
 	});
 });
-        $(document).ready(function(){
-	$("footer").on("click","a", function (event) {
-		//отменяем стандартную обработку нажатия по ссылке
-		event.preventDefault();
 
-		//забираем идентификатор бока с атрибута href
-		var id  = $(this).attr('href'),
-
-		//узнаем высоту от начала страницы до блока на который ссылается якорь
-			top = $(id).offset().top;
-		
-		//анимируем переход на расстояние - top за 1500 мс
-		$('body,html').animate({scrollTop: top}, 1500);
-	});
-});
 </script>
 </body>
 </html>

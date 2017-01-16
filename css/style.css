@@ -60,20 +60,24 @@ header{
     font-size:18px;
 }
 .main-header button{
-    padding: 15px 35px;
+    padding: 15px 0px;
     height: 52px;
 
     border:none;
     border-radius: 6px;
 }
-.main-header button p{
-    padding: 0;
+.main-header button a{
+    padding: 0 30px;
     margin: 0;
+    line-height: 51px;
+    display: block;
     font-size:18px;
     color:#fff;
-    margin-top: -3px;
+    margin-top: -15px;
     display: block;
     text-decoration: none;
+    outline: none;
+    border-radius: 6px;
 }
 .main-header #btn_1{
     background: #fc6a42;
@@ -104,6 +108,20 @@ header{
 }
 .navbar-collapse{
     border: none;
+}
+.scroll-down{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    z-index: 9999;
+    top: 80%;
+    position:absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+    background: url('../img/scroll-down.png') no-repeat;
+    animation: scroll-page-down 0.7s linear infinite alternate;
+    
 }
 /*main*/
 main h2{
@@ -242,6 +260,7 @@ footer h1{
     color:#648cff;
     font-size: 24px;
     font-weight: bold;
+    
 }
 footer h1 span{
     color:#fc6a42;
@@ -249,6 +268,14 @@ footer h1 span{
 .footer-top{
     border-bottom: 1px solid #434769;
     height: 200px;
+}
+.footer-top a{
+    text-decoration: none;
+    outline: none;
+     color:#648cff;
+}
+.footer-top a:hover{
+    color:#648cff;
 }
 .border-bottom{
     height: 1px;
@@ -268,4 +295,15 @@ footer h1 span{
     background:#434769 url("../img/up-arrow-footer.png") no-repeat 50%;
     border:none;
     z-index: 9999;
+}
+
+/*animation*/
+@keyframes scroll-page-down{
+    0%{
+        transform:translateY(8px);
+    }
+    100%{
+        transform:translateY(-8px);
+    }
+    
 }

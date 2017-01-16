@@ -6,7 +6,9 @@
     .download-item h2{
         padding-bottom: 40px;
     }
-
+    .scroll-down{
+        top: 70%;
+    }
 } 
 
 /* Medium Devices, Desktops */ 
@@ -41,6 +43,9 @@
     }
     .button-block{
         text-align: center;
+    }
+    .scroll-down{
+        top: 55%;
     }
 } 
 
@@ -102,6 +107,9 @@ animation: none !important;
     padding:10px 0px 20px 0;
     color:#353854;
 }
+    .scroll-down{
+        display: none;
+    }
    
 } 
 @media only screen and (max-width : 599px) { 
