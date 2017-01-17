@@ -315,38 +315,14 @@ footer h1 span{
   cursor: pointer;
 }
 
-
     #showcase {
         left: 0;
         right: 0;
         margin: 0 auto;
         
       height: 670px;
-    
-        
-        /*height: 700px;
-    width: 700px;*/
+
     }
-    
-   
-    /*.nav {
-      width: 40px;
-      height: 55px;
-      background: url(img/r.png) no-repeat 50% 50%;
-      cursor: pointer;
-      position: absolute;
-      top: 33%;
-        border: none;
-    }
-    
-    .nav.left {
-      left: 443px;
-      transform:rotate(180deg);
-    }
-    .nav.right {
-      right: 443px;
-      
-    }*/
 .noselect.right,.noselect.left{
     display: flex;
     height: 50px;
@@ -364,6 +340,5 @@ footer h1 span{
    /* width: 700px;*/
     left: 0;
   right: 0;
-  margin: 0px auto;
-    
+  margin: 0px auto; 
 }
