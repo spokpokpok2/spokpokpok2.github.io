@@ -93,12 +93,34 @@ weather app</h1>
             </div>
             </div>
             </div>
-            <div class="container">
+          <div class="container">
             <div class="row">
-            <div class="slider-block col-sm-6 col-sm-offset-3">
+            <div class="slider-block">
             <h2>Simple widgets</h2>
             <h5>Drag and drop</h5>
-            <img src="img/giphy.gif" class="img-responsive" alt="">
+<button class="nav noselect left col-xs-1 col-md-1">
+    </button>
+    <div id="showcase" class="noselect col-xs-10 col-md-10">
+      
+      <div class="card">
+        <img src="img/image-center.png" class="img-responsive">
+      </div>
+      <div class="card">
+        
+        <img src="img/image-center.png" class="img-responsive">
+        
+      </div>
+      <div class="card">
+        
+        <img src="img/image-center.png" class="img-responsive">
+      </div>
+    </div>
+    
+    <button class="nav noselect right col-xs-1 col-md-1">
+    </button>
+  
+ 
+  
             </div>
             </div>
             </div>
@@ -274,5 +296,49 @@ $(document).ready(function(){
 });
 
 </script>
+  <script src="js/jquery.cloud9carousel.js"></script>
+  <script>
+    $(function() {
+      var showcase = $("#showcase")
+
+      showcase.Cloud9Carousel( {
+        yOrigin: 62,
+        yRadius: -70,
+         xRadius:380,
+          
+        itemClass: "card",
+        buttonLeft: $(".nav.left"),
+        buttonRight: $(".nav.right"),
+        bringToFront: true,
+        onLoaded: function() {
+          showcase.css( 'visibility', 'visible' )
+          showcase.css( 'display', 'none' )
+          showcase.fadeIn( 1500 )
+        }
+      } )
+
+      //
+      // Simulate physical button click effect
+      //
+      $('.nav').click( function( e ) {
+        var b = $(e.target).addClass( 'down' )
+        setTimeout( function() { b.removeClass( 'down' ) }, 80 )
+      } )
+
+      $(document).keydown( function( e ) {
+       
+        switch( e.keyCode ) {
+          /* left arrow */
+          case 37:
+            $('.nav.left').click()
+            break
+
+          /* right arrow */
+          case 39:
+            $('.nav.right').click()
+        }
+      } )
+    })
+  </script>
 </body>
 </html>

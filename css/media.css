@@ -101,6 +101,9 @@ animation: none !important;
     padding:10px 0px 20px 0;
     color:#353854;
 }
+    .slider-block{
+        display: none;
+    }
     
    
 } 
@@ -108,6 +111,7 @@ animation: none !important;
     .screenshots-item h1{
         font-size: 50px;
     }
+    
 }
 /* Extra Small Devices, Phones */ 
 @media only screen and (max-width : 480px) { 
